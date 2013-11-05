@@ -1,0 +1,42 @@
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css')
+    title Error
+  body
+    .container
+      .row
+        .span6.offset3
+          p &nbsp;
+          p &nbsp;
+          p &nbsp;
+          
+          
+          if isUserError === true
+          
+            p.error(style='background-color: #edd; color: #c00; text-align: center; padding: 15px 10px; margin-bottom: 20px;')
+              b #{message}
+              br
+              small Codice errore: <span style='font-family: monospace;'>#{errlogid}</span>
+            
+            p(style='text-align:center;')
+              button.btn(onclick="window.location.href='#{referer || '/'}'; return false;") &laquo; Torna indietro
+          
+            
+          else
+          
+            .error(style='background-color: #edd; padding: 15px; border-radius: 10px;')
+              h3 Siamo spiacenti
+              
+              p
+                | <b>Si è verificato un errore</b> durante l'elaborazione della tua richiesta, 
+                | una segnalazione automatica è appena stata inoltrata al supporto tecnico che provvederà 
+                | ad intervenire nel più breve tempo possibile.
+                br
+                  
+              p
+                | In caso di richiesta di assistenza fornire questo codice errore: 
+                pre
+                  | #{message}
+                  | #{errlogid}
+          
