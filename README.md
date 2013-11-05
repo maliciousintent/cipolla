@@ -51,12 +51,16 @@ var myapp = cipolla({
 
 You should create an ```error.jade``` template to display *User and Application Errors* (see ```example/views/templates/error.jade```).
 
-Then, to start your application in **PRODUCTION** and run it forever, simply use:
+#### Env: production
+
+Then, to start your application in **PRODUCTION** and run it forever, watching for file changes, simply use:
 ```
-NODE_ENV=production node app.js
+NODE_ENV=production nohup node app.js &
 ```
 
-When ```NODE_ENV !== 'production'``` only a single worker is started and the child output is not silenced.
+#### Env: development
+
+When ```NODE_ENV !== 'production'``` only a single worker is started and files are **not watched** for changes (use supervisor or forever yourself).
 
 
 ## License
