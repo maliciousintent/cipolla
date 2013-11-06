@@ -1,12 +1,12 @@
-cipolla
-=======
+
+![Cipolla](http://i.imgur.com/PcnXgZD.png)
+======
 
 NodeJS stack for resilient web-apps (with [forever](https://github.com/nodejitsu/forever)-[clusters](http://nodejs.org/api/cluster.html)-[connect](http://www.senchalabs.org/connect/)-[urlrouter](https://github.com/fengmk2/urlrouter)-[domain](http://nodejs.org/api/domain.html)-[httboom](https://github.com/plasticpanda/httboom))
 
 > «per me è la cipolla» ~Pedro  
 > https://www.youtube.com/watch?v=VRvTFWjwuPc
 
-![Cipolla](http://re.size.li/1/s/250x250/http://i.imgur.com/2zcUxx6.png)
 
 ## Abstract
 
