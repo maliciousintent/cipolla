@@ -1,18 +1,17 @@
 cipolla
 =======
 
-NodeJS stack for resilient web-apps (with forever-clusters-connect-urlrouter-domains-httboom)
+NodeJS stack for resilient web-apps (with [forever](https://github.com/nodejitsu/forever)-[clusters](http://nodejs.org/api/cluster.html)-[connect](http://www.senchalabs.org/connect/)-[urlrouter](https://github.com/fengmk2/urlrouter)-[domain](http://nodejs.org/api/domain.html)-[httboom](https://github.com/plasticpanda/httboom))
 
-> «secondo me è la cipolla» ~Pedro  
+> «per me è la cipolla» ~Pedro  
 > https://www.youtube.com/watch?v=VRvTFWjwuPc
 
 ![Cipolla](http://re.size.li/1/s/250x250/http://i.imgur.com/2zcUxx6.png)
 
-
 ## Abstract
 
-Writing solid error-proof nodejs web applications is sometimes hard; we've built this wrapper to simplify our job of running, monitoring and maintaining business-critical applications.  
-It's not designed to be flexible but, instead, to fit perfectly with our tools and developing process.  
+Writing **solid error-proof web applications** in nodejs is sometimes hard; we've built this wrapper to simplify our job of running, monitoring and maintaining business-critical applications.  
+It's not designed to be flexible but, instead, to fit perfectly our tools and developing process.  
 If you need to use library ```b``` instead of ```a``` feel free to fork this repo.
 
 
@@ -36,18 +35,22 @@ If you need to use library ```b``` instead of ```a``` feel free to fork this rep
 
 See ```examples/``` for a full working example,
 
-You should create an ```error.jade``` template to display *User and Application Errors* (see ```example/views/templates/error.jade```).
+You should create an ```error.jade``` template to display *User and Application Errors* (see ```examples/views/error.jade```).
+
 
 #### Env: production
 
-Then, to start your application in **PRODUCTION** and run it forever, watching for file changes, simply use:
+Then, to start your application in production and run it forever, watching for file changes, simply use:
 ```
 NODE_ENV=production nohup node app.js &
 ```
 
+```nohup``` ensures the process will not be killed when you close the shell.
+
+
 #### Env: development
 
-When ```NODE_ENV !== 'production'``` only a single worker is started and files are **not watched** for changes (use supervisor or forever yourself).
+When ```NODE_ENV !== 'production'``` only a single worker is started and files are **not watched** for changes (use ```supervisor``` or ```forever``` yourself).
 
 
 ## License
