@@ -1,5 +1,4 @@
 
-var httboom = require('httboom');
 var cipolla = require('../');
 
 
@@ -9,22 +8,17 @@ if (process.env.NODE_ENV === 'production' && !process.env.CIPOLLA_FOREVER) {
   
 } else {
   
+  
+  var router = new cipolla.Dispatcher(__dirname);
+  
   cipolla({
-    name: 'sweetheart',
+    name: 'allenatori',
     port: process.env.PORT || 3000,
-    logentriesAPIKey: 'xxx',
-    cwd: __dirname
-  }, function (app) {
-    
-    app.get('/', function (req, res, next) { 
-      res.render('index', {});
-    });
-    
-    app.get('/fail', function (req, res, next) {
-      // oops, an error occurred!
-      next(new httboom.AppError(500, 'E_SERVER_ERROR', 'Unknown server error', 'Well, actually, there is a bug right here...'));
-    });
-    
+    logentriesAPIKey: process.env.LOGENTIES_APIKEY,
+    cwd: __dirname,
+    dispatcher: router
   });
-
+  
+  router.route('/', { get: 'api.index' });
+  router.route('/fail', 'api.fail');
 }

@@ -34,20 +34,7 @@ If you need to use library ```b``` instead of ```a``` feel free to fork this rep
 
 ## Use
 
-```javascript
-var cipolla = require('cipolla');
-
-var myapp = cipolla({
-  name: 'your-application-name',
-  port: process.env.PORT || 3000,
-  logentriesAPIKey: 'xxx',
-  cwd: './'  // directory to watch for changes
-                // (put in .foreverignore patterns that should be ignored)
-}, function (app) {
-  app.get('/', function (req, res, next) { /* ... */ });
-  // ...
-});
-```
+See ```examples/``` for a full working example,
 
 You should create an ```error.jade``` template to display *User and Application Errors* (see ```example/views/templates/error.jade```).
 
