@@ -6,7 +6,7 @@ NodeJS stack for resilient web-apps (with forever-clusters-connect-urlrouter-dom
 > «secondo me è la cipolla» ~Pedro  
 > https://www.youtube.com/watch?v=VRvTFWjwuPc
 
-![Imgur](http://i.imgur.com/oeMGr0o.jpg)
+![Cipolla](http://re.size.li/1/s/250x250/http://i.imgur.com/2zcUxx6.png)
 
 
 ## Abstract
