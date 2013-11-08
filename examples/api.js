@@ -10,3 +10,8 @@ module.exports.index = function (req, res) {
 module.exports.fail = function (req, res, next) {
   next(new httboom.AppError(500, 'E_SERVER_ERROR', 'Boom', 'Application error'));
 };
+
+module.exports.foo = function (req, res) {
+  res.end('foo: ' + req.param('pippo'));
+};
+

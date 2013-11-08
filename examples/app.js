@@ -20,5 +20,6 @@ if (process.env.NODE_ENV === 'production' && !process.env.CIPOLLA_FOREVER) {
   });
   
   router.route('/', { get: 'api.index' });
+  router.route('/:pippo', { get: 'api.foo' });
   router.route('/fail', 'api.fail');
 }
