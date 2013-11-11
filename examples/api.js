@@ -12,6 +12,7 @@ module.exports.fail = function (req, res, next) {
 };
 
 module.exports.foo = function (req, res) {
+  console.log('Querystring "foo" parameter is', req.param('foo'));
   res.end('foo: ' + req.param('pippo'));
 };
 
