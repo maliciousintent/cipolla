@@ -1,6 +1,6 @@
 {
   "name": "cipolla",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "NodeJS stack for resilient web-apps (with forever-clusters-connect-urlrouter-domains-httboom)",
   "main": "index.js",
   "scripts": {
