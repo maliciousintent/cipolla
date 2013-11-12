@@ -1,6 +1,6 @@
 {
   "name": "cipolla",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "NodeJS stack for resilient web-apps (with forever-clusters-connect-urlrouter-domains-httboom)",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "asciify": "~1.3.3",
     "connect": "~2.11.0",
     "expresssucks": "~0.2.0",
-    "coolog-appender-logentries": "0.0.6",
+    "coolog-appender-logentries": "0.0.7",
     "uuid": "~1.4.1",
     "sugar": "~1.4.1",
     "node-swallow": "0.0.4",
