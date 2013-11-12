@@ -1,6 +1,6 @@
 {
   "name": "cipolla",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "NodeJS stack for resilient web-apps (with forever-clusters-connect-urlrouter-domains-httboom)",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "coolog-appender-logentries": "0.0.7",
     "uuid": "~1.4.1",
     "sugar": "~1.4.1",
-    "node-swallow": "0.0.4",
+    "node-swallow": "0.0.5",
     "colors": "~0.6.2",
     "forever-monitor": "~1.2.3",
     "coolog": "~2.2.1",
